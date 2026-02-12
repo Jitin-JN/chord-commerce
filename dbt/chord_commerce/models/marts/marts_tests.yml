@@ -1,9 +1,11 @@
 version: 2
 
 models:
-  - name: stg_orders
+  - name: fct_order_items
     columns:
       - name: ORDER_ID
         tests:
           - not_null
-          - unique
+      - name: ORDER_ITEM_ID
+        tests:
+          - not_null

@@ -6,3 +6,10 @@ sources:
     schema: RAW
     tables:
       - name: OLIST_ORDERS_DATASET
+      - name: OLIST_CUSTOMERS_DATASET
+      - name: OLIST_ORDER_ITEMS_DATASET
+      - name: OLIST_ORDER_PAYMENTS_DATASET
+      - name: OLIST_PRODUCTS_DATASET
+      - name: OLIST_GEOLOCATION_DATASET
+      - name: PRODUCT_CATEGORY_NAME_ENGLISH
+

@@ -25,3 +25,4 @@ Set up the analytics stack (Snowflake + dbt) and build the first staging model.
 
 ## Result
 STG_ORDERS is available in Snowflake and tests pass successfully.
+

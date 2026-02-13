@@ -48,14 +48,30 @@ final as (
         o.order_status,
         o.order_purchase_ts,
 
-        
         p.product_category_name,
         ct.product_category_name_english as product_category_name_en,
 
-        
         oi.price as item_price,
         oi.freight_value as item_freight_value,
-        (oi.price + oi.freight_value) as item_gross_revenue
+        (oi.price + oi.freight_value) as item_gross_revenue,
+
+        -- simulated cost fields (since Olist does not include real costs)
+        (oi.price * 0.60) as estimated_cogs,
+        (oi.price * 0.03) as estimated_payment_fee,
+
+        (oi.price + oi.freight_value)
+          - (oi.price * 0.60)
+          - (oi.price * 0.03)
+        as contribution_margin,
+
+        (
+          (
+            (oi.price + oi.freight_value)
+            - (oi.price * 0.60)
+            - (oi.price * 0.03)
+          )
+          / nullif((oi.price + oi.freight_value), 0)
+        ) as contribution_margin_pct
 
     from order_items oi
 

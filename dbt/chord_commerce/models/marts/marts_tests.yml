@@ -9,3 +9,65 @@ models:
       - name: ORDER_ITEM_ID
         tests:
           - not_null
+
+  - name: fct_orders
+    columns:
+      - name: ORDER_ID
+        tests:
+          - not_null
+          - unique
+  
+  - name: orders_kpis
+    columns:
+      - name: ORDER_DATE
+        tests:
+          - not_null
+          - unique
+
+  - name: order_revenue_reconciliation
+    columns:
+      - name: ORDER_ID
+        tests:
+          - not_null
+
+  - name: weekly_orders_summary
+    columns:
+      - name: WEEK_START_DATE
+        tests:
+          - not_null
+          - unique
+
+  - name: guardrail_evaluation
+    columns:
+      - name: GUARDRAIL_KEY
+        tests:
+          - not_null
+
+  - name: action_recommendations
+    columns:
+      - name: PROPOSED_ACTION
+        tests:
+          - not_null
+          
+seeds:
+  - name: context_decisions
+    columns:
+      - name: decision_id
+        tests:
+          - not_null
+          - unique
+
+  - name: context_actions
+    columns:
+      - name: action_id
+        tests:
+          - not_null
+          - unique
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-# Context-Aware Commerce Analytics (Snowflake + dbt)
+<img width="1024" height="1536" alt="ChatGPT Image Feb 13, 2026, 02_44_55 AM" src="https://github.com/user-attachments/assets/ac9a2643-0b92-4a12-85b2-170a5869687e" /># Context-Aware Commerce Analytics (Snowflake + dbt)
 
 ## Overview
 
@@ -30,7 +30,8 @@ The architecture mirrors how an AI agent could reason safely before executing bu
 
 ## Architecture Overview
 
-<img width="350" height="577" alt="image" src="https://github.com/user-attachments/assets/4db1a161-a762-4ef0-bb7a-0dd576559fc9" />
+![Uploading architecture - Copy.png…]()
+
 
 
 ## My thougt process

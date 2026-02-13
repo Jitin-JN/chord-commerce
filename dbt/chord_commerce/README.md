@@ -29,7 +29,8 @@ The architecture mirrors how an AI agent could reason safely before executing bu
 
 ## Architecture Overview
 
-<img width="1024" height="1536" alt="ChatGPT Image Feb 13, 2026, 02_44_55 AM" src="https://github.com/user-attachments/assets/ac9a2643-0b92-4a12-85b2-170a5869687e" />
+
+<img width="1024" height="1536" alt="architecture" src="https://github.com/user-attachments/assets/67ee7898-2b54-46e7-a6d8-bea9803ea43d" />
 
 
 

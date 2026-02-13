@@ -30,21 +30,8 @@ The architecture mirrors how an AI agent could reason safely before executing bu
 
 ## Architecture Overview
 
-RAW DATA (Snowflake RAW schema)
-        ↓
-STAGING MODELS (stg_*)
-        ↓
-FACT TABLES (fct_order_items, fct_orders)
-        ↓
-KPI LAYER (weekly_orders_summary, weekly_margin_summary)
-        ↓
-RECONCILIATION (order_revenue_reconciliation)
-        ↓
-GUARDRAIL ENGINE (guardrail_evaluation)
-        ↓
-ACTION RECOMMENDATION (action_recommendations)
-        ↓
-DECISION + ACTION LOG (context_decisions, context_actions)
+<img width="350" height="577" alt="image" src="https://github.com/user-attachments/assets/4db1a161-a762-4ef0-bb7a-0dd576559fc9" />
+
 
 ## My thougt process
 

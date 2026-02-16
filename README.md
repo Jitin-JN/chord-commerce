@@ -168,12 +168,13 @@ I added dbt tests to ensure production-style reliability:
 
 ## Guardrails Catalog
 
-| Guardrail                | Metric                  |     Threshold | Blocks? | Why it matters                |
-| ------------------------ | ----------------------- | ------------: | ------- | ----------------------------- |
-| high_cancellation_rate   | cancellation_rate       |          > 3% | Yes     | fulfillment risk              |
-| revenue_payment_mismatch | large_diff_rate         |          > 1% | Yes     | data quality / payment issues |
-| low_data_coverage        | total_orders            |          < 50 | No      | low confidence                |
-| low_contribution_margin  | contribution_margin_pct | < 15% or null | Yes     | unprofitable growth           |
+| Guardrail                | Metric                  | Threshold | Blocks? | Why it matters                                                                       |
+| ------------------------ | ----------------------- | --------: | :-----: | ------------------------------------------------------------------------------------ |
+| high_cancellation_rate   | cancellation_rate       |      > 3% |   Yes   | If cancellations are high, scaling spend can increase bad orders and customer issues |
+| revenue_payment_mismatch | large_diff_rate         |      > 1% |   Yes   | Revenue and payments not matching usually means data quality or payment problems     |
+| low_data_coverage        | total_orders            |      < 50 |    No   | Very low orders means weekly metrics are unstable (low confidence)                   |
+| low_contribution_margin  | contribution_margin_pct |     < 15% |   Yes   | If margin is too low, scaling growth is not safe because it may be unprofitable      |
+
 
 
 ---

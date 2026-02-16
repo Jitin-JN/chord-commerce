@@ -144,9 +144,20 @@ I added dbt tests to ensure production-style reliability:
 - `context_actions.action_id`: `unique`, `not_null`
 
 ### Test execution proof
-<br>
+
 <img width="1076" height="118" alt="image" src="https://github.com/user-attachments/assets/0af48bb6-2b49-461b-8f13-8155d867b251" />
+
 ---
+
+## Guardrails Catalog
+
+| Guardrail                | Metric                  |     Threshold | Blocks? | Why it matters                |
+| ------------------------ | ----------------------- | ------------: | ------- | ----------------------------- |
+| high_cancellation_rate   | cancellation_rate       |          > 3% | Yes     | fulfillment risk              |
+| revenue_payment_mismatch | large_diff_rate         |          > 1% | Yes     | data quality / payment issues |
+| low_data_coverage        | total_orders            |          < 50 | No      | low confidence                |
+| low_contribution_margin  | contribution_margin_pct | < 15% or null | Yes     | unprofitable growth           |
+
 
 
 

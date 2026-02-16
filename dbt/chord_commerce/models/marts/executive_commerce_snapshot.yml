@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: executive_commerce_snapshot
+    description: "Weekly executive snapshot combining KPIs, margin, WoW changes, guardrails, and recommendations. One row per week."
+    columns:
+      - name: WEEK_START_DATE
+        description: "Week start date (weekly grain). Must be unique and not null."
+        tests:
+          - not_null
+          - unique

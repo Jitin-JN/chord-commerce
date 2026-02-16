@@ -59,11 +59,11 @@ So the system goes from data → metrics → guardrails → recommendations → 
 
 ## Dashboard Snapshots
 
--Executive Commerce Snapshot: “How is the business doing?”
+- Executive Commerce Snapshot: “How is the business doing?”
 
 <img width="1001" height="563" alt="image" src="https://github.com/user-attachments/assets/ccdb2341-455f-43bb-95f3-b5be111e4728" />
 
--Growth Diagnostics: “What changed WoW and why?”
+- Growth Diagnostics: “What changed WoW and why?”
 
 <img width="1003" height="565" alt="image" src="https://github.com/user-attachments/assets/d799168f-1b2e-4daf-80d7-83ed5a3b126b" />
 

@@ -129,7 +129,7 @@ dbt run
 dbt test
 </pre>
 
-### Optional: run everything (models + tests)
+### 9) Run everything (models + tests)
 <pre>
 dbt build
 </pre>

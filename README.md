@@ -64,7 +64,6 @@ So the system goes from data → metrics → guardrails → recommendations → 
 <img width="1001" height="563" alt="image" src="https://github.com/user-attachments/assets/ccdb2341-455f-43bb-95f3-b5be111e4728" />
 
 <br>
-<br>
 
 - ### Growth Diagnostics: “What changed WoW and why?”
 
@@ -86,35 +85,52 @@ So the system goes from data → metrics → guardrails → recommendations → 
 
 ## Quickstart (Run Locally - Windows)
 
-<pre>
 *powershell*
-# 1) Go to project root
-cd J:\PROJECTS\chord-context-graph-commerce
 
-# 2) Create and activate virtual environment
+### 1) Go to project root
+<pre>
+cd J:\PROJECTS\chord-context-graph-commerce
+</pre>
+
+### 2) Create and activate virtual environment
+<pre>
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+</pre>
 
-# 3) Install dbt (Snowflake)
+### 3) Install dbt (Snowflake)
+<pre>
 python -m pip install --upgrade pip
 pip install dbt-core dbt-snowflake
+</pre>
 
-# 4) Go to dbt project
+### 4) Go to dbt project
+<pre>
 cd .\dbt\chord_commerce
+</pre>
 
-# 5) Confirm Snowflake connection
+### 5) Confirm Snowflake connection
+<pre>
 dbt debug
+</pre>
 
-# 6) Load context graph seed tables
+### 6) Load context graph seed tables
+<pre>
 dbt seed --full-refresh
+</pre>
 
-# 7) Build models
+### 7) Build models
+<pre>
 dbt run
+</pre>
 
-# 8) Run tests
+### 8) Run tests
+<pre>
 dbt test
+</pre>
 
-# Optional: run everything (models + tests)
+### Optional: run everything (models + tests)
+<pre>
 dbt build
 </pre>
 ---

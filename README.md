@@ -11,8 +11,6 @@ Instead of stopping at dashboards, this system:
 - Blocks unsafe growth actions
 - Logs decisions and simulated actions
 
-The architecture mirrors how an AI agent could reason safely before executing business decisions.
-
 ---
 
 ## Key Features

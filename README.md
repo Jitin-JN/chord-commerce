@@ -86,7 +86,8 @@ So the system goes from data → metrics → guardrails → recommendations → 
 
 ## Quickstart (Run Locally - Windows)
 
-
+<pre>
+powershell
 # 1) Go to project root
 cd J:\PROJECTS\chord-context-graph-commerce
 
@@ -115,7 +116,7 @@ dbt test
 
 # Optional: run everything (models + tests)
 dbt build
-
+</pre>
 ---
 
 ## dbt Lineage (Documentation)

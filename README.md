@@ -114,14 +114,9 @@ dbt run
 dbt test
 
 # Optional: run everything (models + tests)
-dbt build
-```
+dbt build```
+
 ---
-
-
-
-
-
 
 ## dbt Lineage (Documentation)
 

@@ -30,7 +30,7 @@ Instead of stopping at dashboards, this system:
 
 <img width="1024" height="1536" alt="architecture" src="https://github.com/user-attachments/assets/67ee7898-2b54-46e7-a6d8-bea9803ea43d" />
 
-
+---
 
 ## My thougt process
 
@@ -54,3 +54,26 @@ I added a new guardrail: low contribution margin. If margin is below 15% or if r
 Finally, I implemented decision and action logs to simulate how an AI system could safely recommend and track actions over time.
 
 So the system goes from data → metrics → guardrails → recommendations → decision logging, which is closer to an agent-ready analytics workflow rather than just dashboards.
+
+---
+
+## Dashboard Snapshots
+
+Executive Commerce Snapshot: “How is the business doing?”
+<img width="1001" height="563" alt="image" src="https://github.com/user-attachments/assets/ccdb2341-455f-43bb-95f3-b5be111e4728" />
+
+Growth Diagnostics: “What changed WoW and why?”
+<img width="1003" height="565" alt="image" src="https://github.com/user-attachments/assets/d799168f-1b2e-4daf-80d7-83ed5a3b126b" />
+
+---
+
+## Data Model and Grains
+
+| Model                    | Grain                        | Purpose               |
+| ------------------------ | ---------------------------- | --------------------- |
+| `fct_order_items`        | 1 row per order item         | item revenue + margin |
+| `fct_orders`             | 1 row per order              | order totals          |
+| `weekly_orders_summary`  | 1 row per week               | weekly KPIs           |
+| `guardrail_evaluation`   | 1 row per guardrail per week | pass/fail + blocks    |
+| `action_recommendations` | 1 row per week               | action + explanation  |
+

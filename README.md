@@ -82,3 +82,39 @@ So the system goes from data → metrics → guardrails → recommendations → 
 | `guardrail_evaluation`   | 1 row per guardrail per week | pass/fail + blocks    |
 | `action_recommendations` | 1 row per week               | action + explanation  |
 
+---
+
+## Quickstart (Run Locally - Windows)
+
+```powershell
+# 1) Go to project root
+cd J:\PROJECTS\chord-context-graph-commerce
+
+# 2) Create and activate virtual environment
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# 3) Install dbt (Snowflake)
+python -m pip install --upgrade pip
+pip install dbt-core dbt-snowflake
+
+# 4) Go to dbt project
+cd .\dbt\chord_commerce
+
+# 5) Confirm Snowflake connection
+dbt debug
+
+# 6) Load context graph seed tables
+dbt seed --full-refresh
+
+# 7) Build models
+dbt run
+
+# 8) Run tests
+dbt test
+
+# Optional: run everything (models + tests)
+dbt build
+
+---
+

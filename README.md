@@ -87,7 +87,7 @@ So the system goes from data → metrics → guardrails → recommendations → 
 ## Quickstart (Run Locally - Windows)
 
 <pre>
-powershell
+_powershell_
 # 1) Go to project root
 cd J:\PROJECTS\chord-context-graph-commerce
 

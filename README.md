@@ -146,8 +146,6 @@ I added dbt tests to ensure production-style reliability:
 ### Test execution proof
 <br>
 <img width="1076" height="118" alt="image" src="https://github.com/user-attachments/assets/0af48bb6-2b49-461b-8f13-8155d867b251" />
-
-
 ---
 
 

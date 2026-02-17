@@ -32,7 +32,7 @@ Instead of stopping at dashboards, this system:
 
 ---
 
-## My thougt process
+## My thought process
 
 I built an end-to-end commerce analytics system using Snowflake and dbt, structured in layered architecture similar to how production analytics teams operate.
 
